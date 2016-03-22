@@ -22,5 +22,46 @@
   "bugs": {
     "url": "https://github.com/iamn00b/reacthirafi/issues"
   },
-  "homepage": "https://github.com/iamn00b/reacthirafi#readme"
+  "homepage": "https://github.com/iamn00b/reacthirafi#readme",
+  "devDependencies": {
+    "babel-core": "~6.4.5",
+    "babel-eslint": "~4.1.8",
+    "babel-loader": "~6.2.1",
+    "babel-preset-es2015": "~6.3.13",
+    "babel-preset-react": "~6.3.13",
+    "babel-preset-react-hmre": "~1.0.1",
+    "babel-preset-stage-1": "~6.3.13",
+    "babel-register": "~6.4.3",
+    "css-loader": "~0.23.1",
+    "es6-promise": "~3.0.2",
+    "eslint": "~1.10.3",
+    "eslint-loader": "~1.2.1",
+    "eslint-plugin-react": "~3.16.1",
+    "expect": "^1.14.0",
+    "html-webpack-plugin": "~2.8.1",
+    "html-webpack-template": "~4.0.0",
+    "karma": "^0.13.21",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-cli": "^0.1.2",
+    "karma-mocha": "^0.2.2",
+    "karma-mocha-reporter": "^2.0.0",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^1.7.0",
+    "mocha": "^2.4.5",
+    "mocha-lcov-reporter": "^1.2.0",
+    "nyc": "^6.1.1",
+    "phantomjs": "^2.1.3",
+    "phantomjs-polyfill": "0.0.2",
+    "phantomjs-prebuilt": "^2.1.5",
+    "style-loader": "~0.13.0",
+    "webpack": "~1.12.12",
+    "webpack-dev-server": "~1.14.1",
+    "webpack-merge": "~0.7.3"
+  },
+  "dependencies": {
+    "react": "~0.14.7",
+    "react-dom": "~0.14.7",
+    "react-router": "~2.0.0"
+  }
 }

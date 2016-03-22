@@ -6,6 +6,7 @@
   "scripts": {
     "test": "karma start",
     "build": "rm -rf ./build/ | webpack",
+    "lint": "eslint . --ext .js --ext .jsx --fix",
     "start": "webpack-dev-server"
   },
   "repository": {

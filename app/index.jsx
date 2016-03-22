@@ -1,6 +1,6 @@
-import React from 'react';
+// import React from 'react';
 import ReactDOM from 'react-dom';
 
-const TestElement = (<h1>Test</h1>);
+import TestElement from './TestElement';
 
 ReactDOM.render(TestElement, document.getElementById('app'));

@@ -1,4 +1,5 @@
 var PATHS = require('./app.path');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -36,7 +37,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: 'node_modules/html-webpack-template/index.ejs',
-      title: 'Kanban app',
+      title: 'ReacThirafi',
       appMountId: 'app',
       inject: false
     })

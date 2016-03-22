@@ -1,4 +1,5 @@
 var PATHS = require('./app.path');
+var webpack = require('webpack');
 
 module.exports = {
   devServer: {

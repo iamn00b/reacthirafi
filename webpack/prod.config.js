@@ -1,5 +1,6 @@
 var PATHS = require('./app.path');
 var pkg = require('../package.json');
+var webpack = require('webpack');
 
 module.exports = {
   entry: {

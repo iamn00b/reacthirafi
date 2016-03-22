@@ -1,32 +1,27 @@
-var PATHS = require('./app.path');
-var pkg = require('../package.json');
-var webpack = require('webpack');
+const PATHS = require('./app.path');
+const pkg = require('../package.json');
+const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    vendor: Object.keys(pkg.dependencies).filter(function(v) {
-      // Exclude alt-utils as it won't work with this setup
-      // due to the way the package has been designed
-      // (no package.json main).
-      return true; // v !== 'alt-utils';
-    })
+    vendor: Object.keys(pkg.dependencies),
   },
   output: {
     path: PATHS.build,
     filename: '[name].[chunkhash].js',
-    chunkFilename: '[chunkhash].js'
+    chunkFilename: '[chunkhash].js',
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
-      names: ['vendor', 'manifest']
+      names: ['vendor', 'manifest'],
     }),
     new webpack.DefinePlugin({
-       'process.env.NODE_ENV': JSON.stringify('production')
+      'process.env.NODE_ENV': JSON.stringify('production'),
     }),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
-        warnings: false
-      }
-    })
-  ]
+        warnings: false,
+      },
+    }),
+  ],
 };

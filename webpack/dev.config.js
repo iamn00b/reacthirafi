@@ -1,5 +1,5 @@
-var PATHS = require('./app.path');
-var webpack = require('webpack');
+const PATHS = require('./app.path');
+const webpack = require('webpack');
 
 module.exports = {
   devServer: {
@@ -17,10 +17,10 @@ module.exports = {
 
     // Parse host and port from env so this is easy to customize.
     host: process.env.HOST,
-    port: process.env.PORT
+    port: process.env.PORT,
   },
   devtool: 'eval-source-map',
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
-  ]
+    new webpack.HotModuleReplacementPlugin(),
+  ],
 };

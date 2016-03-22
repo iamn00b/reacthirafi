@@ -1,4 +1,3 @@
-var webpack = require('webpack');
 var merge = require('webpack-merge');
 
 var es6promise = require('es6-promise');

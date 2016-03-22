@@ -4,7 +4,9 @@
   "description": "My react boilerplate",
   "main": "index.js",
   "scripts": {
-    "test": "karma start"
+    "test": "karma start",
+    "build": "rm -rf ./build/ | webpack",
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",

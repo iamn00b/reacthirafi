@@ -1,0 +1,26 @@
+{
+  "name": "reacthirafi",
+  "version": "0.0.1",
+  "description": "My react boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamn00b/reacthirafi.git"
+  },
+  "keywords": [
+    "react",
+    "flux",
+    "redux",
+    "flow",
+    "boilerplate"
+  ],
+  "author": "Thirafi Dide",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/iamn00b/reacthirafi/issues"
+  },
+  "homepage": "https://github.com/iamn00b/reacthirafi#readme"
+}

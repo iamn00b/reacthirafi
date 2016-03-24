@@ -7,3 +7,6 @@ node_js:
 script: 
   - npm run lint
   - npm test
+
+after_script: 
+  - npm run upload-coverage

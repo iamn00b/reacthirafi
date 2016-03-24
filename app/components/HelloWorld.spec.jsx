@@ -5,7 +5,6 @@ import expect from 'expect';
 import HelloWorld from './HelloWorld.jsx';
 
 describe('Test Component', () => {
-
   const shallowRenderer = TestUtils.createRenderer();
   shallowRenderer.render(<HelloWorld />);
   const renderResult = shallowRenderer.getRenderOutput();

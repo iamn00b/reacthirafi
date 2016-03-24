@@ -2,11 +2,11 @@ import React from 'react';
 import TestUtils from 'react/lib/ReactTestUtils';
 import expect from 'expect';
 
-import TestElement from '../TestElement.jsx';
+import HelloWorld from './HelloWorld.jsx';
 
 describe('Test Component', () => {
   const shallowRenderer = TestUtils.createRenderer();
-  shallowRenderer.render(<TestElement />);
+  shallowRenderer.render(<HelloWorld />);
   const renderResult = shallowRenderer.getRenderOutput();
 
   it('renders without problems', () => {

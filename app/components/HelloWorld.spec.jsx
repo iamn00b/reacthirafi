@@ -1,6 +1,6 @@
 import React from 'react';
 import TestUtils from 'react/lib/ReactTestUtils';
-import expect from 'expect';
+import expect from 'expect'
 
 import HelloWorld from './HelloWorld.jsx';
 
@@ -11,6 +11,10 @@ describe('Test Component', () => {
 
   it('renders without problems', () => {
     expect(renderResult).toExist();
+  });
+
+  it('renders "Hello World" heading text', () => {
     expect(renderResult.type).toBe('h1');
+    expect(renderResult.props.children).toBe('Hello World');
   });
 });

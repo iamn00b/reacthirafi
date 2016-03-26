@@ -1,6 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import TestElement from './components/TestElement';
+import Store from './redux';
 
-ReactDOM.render(<TestElement />, document.getElementById('app'));
+import Counter from './components/Counter';
+
+const incrementAction = () => Store.dispatch({ type: 'INCREMENT' });
+const decrementAction = () => Store.dispatch({ type: 'DECREMENT' });
+
+const App = () => (
+  <Counter
+    onIncrement={ incrementAction }
+    onDecrement={ decrementAction }
+    counter={ Store.getState().counter }
+  />
+);
+
+const render = () => {
+  ReactDOM.render(<App />, document.getElementById('app'));
+};
+
+Store.subscribe(render);
+render();

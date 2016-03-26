@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default (props) => (
+export default ({ counter, onIncrement, onDecrement }) => (
   <div>
-    <h1>{props.counter}</h1>
-    <button>+</button>
-    <button>-</button>
+    <h1>{counter}</h1>
+    <button onClick={onIncrement}>+</button>
+    <button onClick={onDecrement}>-</button>
   </div>
 );

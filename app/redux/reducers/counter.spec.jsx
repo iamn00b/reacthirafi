@@ -1,8 +1,12 @@
 import expect from 'expect';
+import { isReducer } from '../../../utils/reducerTestUtils';
+
 import counterReducer from './counter';
 
 describe('Counter Reducers', () => {
-  it('Increase the counter number within INCREMENT action', () => {
+  isReducer(counterReducer, 0);
+
+  it('increment the counter number within INCREMENT action', () => {
     const stateBefore = 0;
     const stateAfter = 1;
     const action = {
@@ -13,7 +17,7 @@ describe('Counter Reducers', () => {
       .toEqual(stateAfter);
   });
 
-  it('Decrease the counter number within DECREMENT action', () => {
+  it('decrement the counter number within DECREMENT action', () => {
     const stateBefore = 3;
     const stateAfter = 2;
     const action = {
